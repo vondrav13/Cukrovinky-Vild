@@ -1,8 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('pozadi.jpg');
+    background: url(pozadí.png);
     background-repeat: repeat;
+    background-size: 500px 500px; /* šířka výška */
+
 }
 
 header {
@@ -46,9 +48,11 @@ header {
 
 .images-grid img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 150px; /* výška můžeš měnit podle potřeby */
+    object-fit: cover;
+    border-radius: 8px;
 }
+
 
 /* Responzivita */
 @media (max-width: 768px) {
